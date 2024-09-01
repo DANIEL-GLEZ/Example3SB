@@ -1,0 +1,15 @@
+"""
+Estructura de datos, Serie Fibonacci. En mi caso puse de quince dígitos
+"""
+
+
+def fibonacci(n):
+    secuencia_fib = [0, 1]
+    while len(secuencia_fib) < n:
+        secuencia_fib.append(secuencia_fib[-1] + secuencia_fib[-2])
+    return secuencia_fib
+
+# Generar al menos 15 dígitos de la serie de Fibonacci
+n = 15
+secuencia_fibonacci = fibonacci(n)
+print(secuencia_fibonacci)
